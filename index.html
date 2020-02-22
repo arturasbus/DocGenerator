@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,10 +20,6 @@
 <link rel="icon" href="https://getbootstrap.com/docs/4.4/assets/img/favicons/favicon.ico">
 <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
-
-
-  <!-- Custom styles for this template -->
-  <link href="style/style.css" rel="stylesheet">
 </head>
 <body class="bg-light">
 
@@ -101,11 +98,11 @@
   <!-- Info card -->
   <div class="col-md-8 order-md-1">
     <h4 class="mb-3">Jūsų informacija</h4>
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation" action="includes/insert.php" method="POST">
 
         <div class="mb-3">
           <label for="company">Įmonė</label>
-          <input type="text" class="form-control" id="company" placeholder="UAB &quot;Pavyzdukas&quot;" value="" required>
+          <input type="text" class="form-control" id="company" name="company" placeholder="UAB &quot;Pavyzdukas&quot;"  required>
           <div class="invalid-feedback">
             Įveskite pavardę!
           </div>
@@ -114,7 +111,7 @@
         <div class="row">
         <div class="col-md-6 mb-3">
           <label for="firstName">Vardas</label>
-          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+          <input type="text" class="form-control" id="firstName" name="firstName" placeholder=""  required>
           <div class="invalid-feedback">
             Įveskite vardą!
           </div>
@@ -122,7 +119,7 @@
 
         <div class="col-md-6 mb-3">
           <label for="lastName">Pavardė</label>
-          <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+          <input type="text" class="form-control" id="lastName" name="lastName" placeholder=""  >
           <div class="invalid-feedback">
             Įveskite pavardę!
           </div>
@@ -147,7 +144,7 @@
 
       <div class="mb-3">
         <label for="address">Adresas</label>
-        <input type="text" class="form-control" id="address" placeholder="Žardininkų g. 1 - 24" required>
+        <input type="text" class="form-control" id="address" placeholder="Žardininkų g. 1 - 24" >
         <div class="invalid-feedback">
           Įveskite teisingą adresą!
         </div>
@@ -156,7 +153,7 @@
       <div class="row">
         <div class="col-md-5 mb-3">
           <label for="city">Miestas</label>
-          <select class="custom-select d-block w-100" id="city" required>
+          <select class="custom-select d-block w-100" id="city" >
             <option value="">Pasirinkite...</option>
             <option>Klaipėda</option>
             <option>Kaunas</option>
@@ -168,7 +165,7 @@
         </div>
         <div class="col-md-4 mb-3">
           <label for="state">Savivaldybė</label>
-          <select class="custom-select d-block w-100" id="state" required>
+          <select class="custom-select d-block w-100" id="state" >
             <option value="">Pasirinkite...</option>
             <option>Klaipėdos m. sav.</option>
             <option>Kauno m. sav.</option>
@@ -183,7 +180,7 @@
      <div class="row">
       <div class="col-md-5 mb-3">
         <label for="dateFrom">Atostogų pradžios data:</label>
-        <input type="date" class="form-control" id="dateFrom" placeholder="" required>
+        <input type="date" class="form-control" id="dateFrom" placeholder="" >
         <div class="invalid-feedback">
           Įveskite atostogų pradžios datą!
         </div>
@@ -191,7 +188,7 @@
 
       <div class="col-md-5 mb-3">
         <label for="dateUntil">Atostogų pabaigos data:</label>
-        <input type="date" class="form-control" id="dateFrom" placeholder="" required>
+        <input type="date" class="form-control" id="dateFrom" placeholder="" >
         <div class="invalid-feedback">
           Įveskite atostogų pabaigos datą!
         </div>
@@ -220,5 +217,5 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-      <script src="form-validation.js"></script></body>
+</body>
 </html>
