@@ -1,2 +1,2 @@
 # DocGenerator
-Documents generation app
+
